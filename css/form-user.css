@@ -1,0 +1,128 @@
+.user-info {
+    min-height: calc(90vh - 52px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-info-container {
+    width: 1000px;;
+    padding: 30px;
+
+    background: linear-gradient(to bottom, #e0f1f4, #c4e0e6);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+.form-button-user
+{
+    background-color: #c0c0c6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+    cursor: pointer;
+}
+button.form-button-user {
+    margin-top: 20px;
+}
+input, .form-button-user
+{
+    font-family: 'santello', sans-serif;
+    border-radius: 4px;
+    border: unset;
+    padding: 15px 30px;
+    border-radius: 20px;
+}
+
+form.user-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form.user-profile + p {
+    text-align: center;
+}
+
+.user-profile input,
+.user-profile .form-button {
+    font-family: 'santello', sans-serif;
+    border-radius: 4px;
+    border: unset;
+    padding: 15px 30px;
+    border-radius: 20px;
+}
+
+.user-profile .form-button {
+    background-color: #272B3B;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+}
+
+.user-profile .error {
+    color: rgb(50, 3, 3);
+}
+
+.user-profile .hidden {
+    display: none;
+}
+
+.user-profile .link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3862ae;
+    transition: font-size 0.2s ease;
+}
+
+.user-profile .link:hover {
+    font-size: 18px;
+}
+
+.user-profile .form-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.user-profile .form-left,
+.user-profile .form-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-profile button.form-button {
+    margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+    .user-info-container {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .user-profile input,
+    .user-profile .form-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .user-profile {
+        gap: 5px;
+    }
+
+    .user-profile .form-columns {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .user-profile .form-right {
+        margin-top: 10px;
+    }
+
+    .user-profile .form-left,
+    .user-profile .form-right {
+        flex: none;
+        width: 100%;
+    }
+}
